@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>交集选择器</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        /*              
+            当我们想要选择： 某一个元素 并且这个元素拥有某个类名的时候
+
+        */
+        .list li{
+            width: 30px;
+            height: 30px;
+            border: 1px solid #000;
+            margin: 30px;
+            border-radius: 50%;
+            background-color: pink;
+        }              /*  第一必须是标签名选择器，第二个必须是类别选择器或者ID选择器，
+                        两个选择器之间不能有空格，必须连续书写 */
+        .list li.active{
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <ul class="list">
+            <li></li>
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

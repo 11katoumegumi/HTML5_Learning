@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>优先级覆盖案例</title>
+    <style>
+        .outer li{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: grey;
+            float: left;
+        }
+
+        .outer .active{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul class="outer">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <!-- 将来使用js，哪一个li拥有样式，就给它active的类名 -->
+        <li class="active"></li>
+        <li></li>
+    </ul>
+</body>
+</html>
