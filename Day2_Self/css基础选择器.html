@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #three{         /* id选择器 */
+            background-color: greenyellow;
+        }
+        li{
+            background-color: red;/* 标签选择器 */
+        }
+        .show{
+            background-color: green;
+        }
+        .active{
+            background-color: yellow;   /* 类选择器
+             */
+        }
+        .con{
+            width: 100px;
+            height: 100px;  
+        }
+        div{color: red !important;}   /* 提高指定样式规则的应用优先权（优先级） */
+    </style>
+</head>
+
+<body>                                    <!--  !important > 行内书写 > id > 类 > 标签名 > 通配符 > 继承=默认 -->
+    <ul>
+        <li id="three">
+
+        </li>
+        <li></li>
+    </ul>
+    <br>
+    <ul>
+        <li class="show"></li>
+        <li></li>
+        <li class="show"></li>
+    </ul>
+    <div class="active con"></div>
+</body>
+</html>

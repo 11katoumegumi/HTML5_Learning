@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 嵌入式引入 -->
+    <style>
+        li{
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+    <!-- 外部引入 -->
+    <link rel="stylesheet" href="1.css" type="text/css">
+    <!-- link引入和@import引入的对比
+    功能范围不同 link属于html标签 @import只是css提供的引入css的功能
+    加载顺序不同 页面在加载的时候，link引入的css会同时被加载 @import引入的css只有等页面全部下载完成以后才进行加载，所以可能会出现闪烁
+    兼容性 link所有浏览器都支持 @import低版本ie不支持
+    使用JS控制样式 JS只能控制link标签 @import是不能够被JS控制的 -->
+</head>
+<body>
+    <ul>
+        <!-- 内联式引入CSS -->
+        <li style="background-color: green;width: 100px;height: 100px;float: left;margin: 10px;color: #fff;text-align: center;line-height: 100px;"></li>
+        <li style="background-color: steelblue;width: 100px;height: 100px;float:left; margin: 10px;color: #fff;text-align: center;line-height: 100px;"></li>
+    </ul>
+    <br><br><br><br><br><br>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div>
+        我好快乐啊  
+    </div>
+</body>
+</html>
