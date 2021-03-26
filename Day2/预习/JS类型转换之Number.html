@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1、Number转  数字转数字  还是原来的值
+
+        // 2、字符串转数字
+        console.log(Number(""));//0 空字符串-->0
+        console.log(Number("   "));//0 都是空格的字符串-->0
+        console.log(Number("123"));//0 纯数字的字符串-->相对应的数字
+        console.log(Number("1a23"));//0 非纯数字的字符串-->NaN
+
+
+        //3、布尔值转数字
+        console.log(Number(true));//1  true-->1
+        console.log(Number(false));//0  false-->0
+
+        // 4、undefined转数字
+        console.log(Number(undefined));//NaN  undefined-->NaN
+
+        // 5、null转数字
+        console.log(Number(null));// 0   null--->0
+
+        // 6、object(数组和对象)转数字
+        console.log(Number([]));//0 空数组-->0
+        console.log(Number([1, 2, 3]));//NaN 一般非空数组-->NaN
+        console.log(Number([1]));//1 数字只有一个值，并且是数字-->当前数字
+        console.log(Number(["1"]));//1 数字只有一个值，并且是数字值的字符串-->当前数字
+        console.log(Number(["a"]));//0 数字只有一个值，并且是非数字-->NaN
+
+        console.log(Number({}));//NaN  空对象-->NaN
+        console.log(Number({ name: "lily" }));//NaN  非空对象-->NaNz
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num1=20;
+        var num2=18.11112;
+        var num3=010;/* 数字前一个0表示8进制 */
+        var num4=0xff;/* 在数字前加0x表示十六进制数 */
+        var num5=1.2e-7;/* 科学计数发 用E代表底数10  后边跟E的指数 可以是正负值  */   
+
+    </script>
+</head>
+<body>
+    请输入您的电话号码：
+    <input id="ipt" type="text">
+    <button id="btn">检测</button>
+    <script>
+        var oIpt=document.getElementById("ipt");
+        var oBtn=document.getElementById("btn");
+
+        oBtn.onclick=function(){
+            var userCon=oIpt.value;
+
+            if(isTure=isNaN(oIpt.value)){
+                alert("请输入数字");
+            }else{
+                alert("输入正确");
+            }
+        }
+    </script>
+</body>
+</html>

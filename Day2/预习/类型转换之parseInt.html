@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log(parseInt(123));//123
+        console.log(parseInt("a123"));//NaN
+        console.log(parseInt("1a123"));//1
+        console.log(parseInt("10a23"));//10
+        console.log(parseInt("100px"));//100
+        console.log(parseInt(12.3));//12
+        console.log(parseInt("0xa"));//12
+
+        console.log(parseInt(null));//NaN
+        console.log(parseInt(true));//NaN
+
+
+        /*
+            * parseInt 支持基模式，把不同进制的数字字符串转换为整数
+        * */
+        var a = "abc123";
+        console.log(parseInt(a, 16));//11256099 把a当成16进制，转化为10进制输出
+        var b = "111";
+        console.log(parseInt(b, 2));//7
+
+        console.log(parseInt(5, 3));//NaN  因为3进制没有5这个字符
+
+        // 特殊情况如下：
+        console.log(parseInt(1, 1));//NaN
+        console.log(parseInt(0, 1));//NaN
+        console.log(parseInt(0, 0));//0
+        var str1 = '093284yrc091708)(*&(^&(*&T';
+        var str2 = "kajhx  askjh &*(";
+        var str3 = `9287O&*b`;
+        var str4 = "小王他妈妈说：'他要把翠花嫁给我'";
+        console.log(str4);
+
+        var str5 = "今天天气\n真好"
+        console.log(str5);
+
+        var str6 = "今天天气\
+    真好";
+        console.log(str6);
+    </script>
+</body>
+
+</html>
