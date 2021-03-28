@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>表格复习</title>
+    </head>
+    <body>
+        <form action="#" method="GET">
+            <table border="0" >
+                <tr>
+                    <td><label for="email">邮　　箱：</label></td>
+                    <td><input type="text" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">密　　码：</label></td>
+                    <td><input type="text" id="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="comfirmPD">确认密码：</label></td>
+                    <td><input type="text" name="comfirmPD" id="comfirmPD"></td>
+                </tr>
+                <tr>
+                    <td>性　　别</td>
+                    <td> <label for="male">男</label><input type="radio" name="gender" id="male"> 
+                        <label for="female">女</label><input type="radio" name="gender" id="female"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>爱　　好:</td>
+                    <td>
+                        <label for="dp">打牌</label> <input type="checkbox" name="hobby" id="dp" value="1">
+                        <label for="sn">赛鸟</label> <input type="checkbox" name="hobby" id="sn" value="1"> 
+                        <label for="dy">钓鱼</label> <input type="checkbox" name="hobby" id="dy" value="1">
+                        <label for="yy">养鱼</label> <input type="checkbox" name="hobby" id="yd" value="1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>国　　家:</td>
+                    <td>
+                        <select name="country" id="country">
+                            <optgroup label="亚洲">
+                                <option value="c">中国</option>
+                                <option value="j">日本</option>
+                                <option value="s">新加坡</option>
+                            </optgroup>
+                            <option value="n">其他地区</option>
+                        </select>
+                        <select name="country2" id="country2" multiple>
+                            <option value="c1">中国</option>
+                            <option value="j1">日本</option>
+                            <option value="s1">新加坡</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"> <input type="submit" value="登录"></td>
+
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

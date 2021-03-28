@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>表格练习</title>
+</head>
+
+<body>
+    <form action="#" method="GET">
+        <label for="email">邮箱地址 </label><input type="text" id="email" name="email"><br>
+        <label for="password">密　　码 </label><input type="text" id="password" name="password"><br>
+        <label for="comfirmpd">确认密码 </label><input type="text" id="comfirmpd" name="comfirmpd"><br>
+        <label>上传头像　</label><input type="file" id="upload"><br>
+
+        性　　别
+        <label for="female">女</label><input type="radio" id="female" value="female" name="gender">
+        <label for="male">男</label><input type="radio" id="male" value="male" name="gender"><br>
+
+        兴　　趣
+        <label for="dneghshan">登山</label><input type="checkbox" id="dneghshan" name="xingqu[]" value="dneghshan">
+        <label for="jiaoyou">郊游</label><input type="checkbox" id="jiaoyou" name="xingqu[]" value="jiaoyou">
+        <label for="diaoyu">钓鱼</label><input type="checkbox" id="diaoyu" name="xingqu[]" value="diaoyu">
+        <label for="yangyu">养鱼</label><input type="checkbox" id="yangyu" name="xingqu[]" value="yangyu">
+        <label for="chongwu">饲养宠物</label><input type="checkbox" id="chongwu" name="xingqu[]" value="chongwu">
+        <label for="youxi">网络游戏</label><input type="checkbox" id="youxi" name="xingqu[]" value="youxi"><br>
+
+        国　　家 <select name="country" id="country">
+            <option value="china">中国</option>
+            <option value="japan">日本</option>
+            <option value="korea">韩国</option>
+        </select><br>
+
+        <input type="submit" value="登录" style="margin-left: 180px;">
+    </form>
+</body>
+
+</html>
