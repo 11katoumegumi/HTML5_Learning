@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>第二次复习CSS选择器</title>
+        <style type="text/css">
+            div {
+                font-size: 100px;
+            }
+            .classtest{
+                color: pink;
+            }
+            #idtest{
+                color: pink;
+            }
+            div{
+                background-color    : pink;
+            }
+            p.test1{
+                color: plum;
+            }
+            #test2,#test3{
+                background-color: plum;
+            }
+            p span{
+                background-color: aquamarine;
+            }
+            p.test4{
+                background-color: blueviolet;
+            }
+            a:link{
+                color: pink;
+            }
+            a:visited{
+                color: powderblue;
+                
+            }
+            a:hover{
+                color: rosybrown;
+                font-size: 50px;
+            }
+            a:active{
+                color: navajowhite;
+            }
+
+        </style>
+        <link rel="stylesheet" href="../css/1.css" type="text/css">
+    </head>
+    <body>
+        <p class="classtest">类选择器</p>
+        <p id="idtest">id选择器</p>
+        <div><p>标签选择器</p></div>
+        <p class="test1">p.test形式的选择器连写</p>
+        <p id="test2">两个ID选择器逗号式连写part1</p>
+        <p id="test3">两个ID选择器逗号式连写part2</p>
+        <p><span>两个选择器空格式连写</span></p>
+        <p class="test4">一个标签选择器和类选择器连写中间不加东西</p>
+        <a href="./css选择器.html">a标签的伪类选择器要按照爱恨原则书写</a>
+        <hr>
+        <h1>字体</h1>
+        <p style="font-size: 50px; font-family: simsun; font-weight: 700; font-style: italic; text-decoration: underline overline line-through;">雀氏摔雀氏摔我都说了雀氏摔了你含在这里鬼叫你就出去行吗是不是耳聋</p>
+        <div><p style="font-size: 0.5em;">Sunyeojin</p></div>
+    </body>
+</html>

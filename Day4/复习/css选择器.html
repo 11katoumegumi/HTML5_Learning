@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css选择器复习</title>
+    <style>
+        .classchooser{
+            color: pink;
+            /* 类选择器，可以使用多个 */
+        }
+
+        #idchooser {
+            color: rgb(255, 00, 0);
+            /* id选择器 */
+        }
+
+        b {
+            color: tomato;
+            /* 标签选择器 */
+        }
+
+        * {
+            background-color: white;
+            /* 通用选择器 */
+        }
+        p.test{     /* 标签选择器加类选择器 */
+            color: violet;
+        }
+        .test1,.test11{ /* 用逗号隔开才是同时两个随便一个都可以，否则是两个都要 */
+            color: pink;
+            /* 类选择器，可以使用多个 */
+        }
+        p #houdai{
+            color: aqua;
+        }
+        a:link{
+            color: pink;
+        }
+        a:visited{          /* 链接伪类选择器 */
+            color: aqua;
+        }
+        a:hover{
+            color: darkorange;  /* 动态伪类型选择器 */
+        }                           /* 爱恨原则LoVeHate */
+        a:active{
+            color: darkslateblue;
+        }
+        p .test3{
+            font-size: 100px;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="../css/1.css">
+</head>
+
+<body>
+    <p class="classchooser">文字1</p><br>
+    <p class="classchooser">文字2</p><br>
+    <p id="idchooser"> id选择器</p>
+    <p style="color: tomato;">行内样式</p>
+    <p class="test">类选择器加name属性</p>
+    <p class="test1">多个类选择器写在一起</p>
+    <p > <span id="houdai">儿后代选择器</span></p>
+    <p><span><span id="houdai">孙后代选择器</span></span></p>
+    <br><a href="../css基本语法.html">伪类选择器</a>
+    <p ><a style="font-family: simsun;" class="test3">font-famliy测试<br>
+        <a style="font-size: .5em;font-weight: 600; font-style: italic;text-decoration: underline overline line-through;" >font-size:em测试</a>
+    </a>
+    </p>
+</body>
+
+</html>
