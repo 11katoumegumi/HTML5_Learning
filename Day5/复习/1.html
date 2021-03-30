@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>11</title>
+    <style>
+        .hangneikuaiji {
+            display: inline-block;
+        }
+
+        div #google {
+            font-size: 0px;
+        }
+
+        #blue {
+            color: blue;
+            font-size: 150px;
+        }
+
+        #red {
+            color: red;
+            font-size: 150px;
+        }
+
+        #yellow {
+            color: yellow;
+            font-size: 150px;
+        }
+
+        #green {
+            color: green;
+            font-size: 150px;
+        }
+
+        #indent {
+            text-indent: 2em;
+        }
+
+        #huanhang1 {
+            border: 1px solid green;
+            width: 300px;
+            white-space: nowrap;
+        }
+        #huanhang2{
+            border: 1px solid green;
+            width: 300px;
+            white-space: normal;
+        }
+        #huanhang3{
+            word-break: break-all;
+            border: 1px solid green;
+            width: 300px;
+        }
+        #huanhang4{
+            word-break: keep-all;
+            border: 1px solid green;
+            width: 300px;
+        }
+        #overflow1{
+            border: 1px solid green;
+            width: 300px;
+            overflow: visible;
+        }
+        #overflow2{
+            border: 1px solid green;
+            width: 300px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        #overflow3{
+            border: 1px solid green;
+            width: 300px;
+            overflow: scroll;
+        }
+        #shuipingjuhong{
+            text-align: center;
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 块级元素和行内元素的区别 -->
+    <!-- 块状元素可以设置宽度和高度，即使设置了高度宽度也任然独占一行 -->
+    <div>常见的块级元素有：</div>
+    <div>div,h1~h6,p,ul,ol,li,dl,dd,dt,form</div>
+    <!--  行内元素（内联元素）不会独占一行，多个相邻的元素连写会在一行排列直到排不下 -->
+    <!-- 行内元素设置宽度和高度无效 -->
+    <span>常见的行内元素有</span>
+    <span>span,b,strong,em,i,u,ins,s,del</span> <br>
+    <!-- 行内块级元素 -->
+    <!-- 在内部表现为铠装元素，可以设置宽度高度但是排列方式类似行内元素 -->
+    <img src="../../img/dd.gif" alt=""><img src="../../img/dan.jpg" alt="" width="300" height="200"> <br>
+    <!-- 以上元素可以用CSS中的display:value进行转换 block,inline,inline-block-->
+    <div class="hangneikuaiji">div转行内块级元素1</div>
+    <div class="hangneikuaiji">div转行内块级元素2</div>
+    <hr>
+    <h1>谷歌logo例子</h1>
+    <div id="google">
+        <span id="blue">g</span>
+        <span id="red">o</span>
+        <span id="yellow">o</span>
+        <span id="blue">g</span>
+        <span id="green">l</span>
+        <span id="red">e</span>
+    </div>
+    <hr>
+    <h1>文本缩进 text-indent:value 一般用em为值 </h1>
+    <!-- 文本缩进 text-indent:value 一般用em为值 -->
+    <!-- text-indent不能作用在行内元素上 -->
+    <div id="indent"><b>我好快乐啊</b></div>
+    <hr>
+    <h1>换行</h1>
+    <!-- 使用white-space:value来处理是否允许换行，value=normal,nowrap -->
+    <div id="huanhang1">
+        <p>white-space=nowrap:设置一个元素外边距的宽度。外边距可以理解为当前元素与父级或其他兄弟级元素的距离。
+            值可以是一个单位，也可以是一个百分比
+            分4个方向
+            margin-left、margin-right、margin-top、margin-bottom
+            每个方向的值都可以单独的设置
+         </p>
+    </div>
+    <div id="huanhang2">
+        <p>
+            white-space:normal:设置一个元素外边距的宽度。外边距可以理解为当前元素与父级或其他兄弟级元素的距离。
+            值可以是一个单位，也可以是一个百分比
+            分4个方向
+            margin-left、margin-right、margin-top、margin-bottom
+            每个方向的值都可以单独的设置
+        </p>
+    </div>
+    <div id="huanhang3">word-break:break-all:我们在换行的时候有些英文单词因为太长所以不能马上换行。`work-break`
+
+        格式： `word-break:value`用来标明怎杨进行单词内的断句</div>
+    <div id="huanhang4">word-break:keep-all我们在换行的时候有些英文单词因为太长所以不能马上换行。`work-break`
+
+        格式： `word-break:value`用来标明怎杨进行单词内的断句</div>
+    <div id="overflow1">
+        <p>防止父级和其他元素之间的间隙过大，当第一个和最后一个子元素的margn塌陷给父级以后 父级就可以和兄弟元素在垂直方向上进行叠加</p>
+    </div>
+    <div id="overflow2">
+        <p>防止父级和其他元素之间的间隙过大，当第一个和最后一个子元素的margn塌陷给父级以后 父级就可以和兄弟元素在垂直方向上进行叠加</p>
+    </div>
+    <div id="overflow3">
+        <p>防止父级和其他元素之间的间隙过大，当第一个和最后一个子元素的margn塌陷给父级以后 父级就可以和兄弟元素在垂直方向上进行叠加</p>
+    </div>
+    <hr>
+    <h1>水平居中</h1>
+    <!-- 块状元素或行内块状元素 -->
+    <div id="shuipingjuhong"><p>text-align只能作用于子标签：I play to win!</p></div>
+    <div style="font-size: 20px;line-height: 3.5;">
+        number，将数值作为行高度。根据当前的font-size大小来进行计算。
+    </div>
+</body>
+
+</html>
