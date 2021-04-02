@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.t1{
+            border: 1px solid pink;
+            width: auto;/* auto等于父元素的宽度 */
+            height: auto;/* 默认，块状元素看行高，行内元素设置了height也不会影响垂直距离 */
+            min-width: 300px;
+            max-width: 700px;
+            min-height: 30px;
+            max-width: 700px;
+
+        }
+        .inlineblock{
+            width: auto;/* 行内或者行内块状元素的auto宽度等于内容的宽度 */
+        }
+        .inline{
+            height: auto; /* 行内元素设置了height也不会影响垂直距离 */
+        }
+    </style>
+</head>
+<body>
+        <div class="t1"></div>
+        <span class="inlineblock"></span>
+        <b class="inline"></b>
+</body>
+</html>

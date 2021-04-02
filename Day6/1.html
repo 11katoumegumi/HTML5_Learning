@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框画三角形</title>
+    <style>
+        body{
+            
+        }
+        .box{
+            width: 0;
+            height: 0;
+            border: 10px solid #000;
+            border-top-color: transparent;
+            border-bottom-color: #ff8d9e;
+            border-left-color: transparent;
+            border-right-color:transparent;
+
+            transform: rotate(0deg);
+        }
+        .box1{
+            width: 200px;
+            height: 40px;
+            border: 5px solid pink;
+
+        }
+    </style>
+</head>
+<body>
+    <!--
+        当内容非常小的时候，
+        上下左右边框重合，重合部分就会平分为两半，
+        这个时候，整个边框就分为了4个三角形
+    -->
+    <div class="box"></div>
+    <div class="box1">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            margin: 30px;
+        }
+        div .s{
+            display: inline-block;
+            height: 70px;
+            width: 70px;
+            background-color: powderblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+<!-- 行内元素 -->
+        <span>I got a bad feeling</span> <!-- 外边距对行内元素只有左右外边距有作用，上下没有 -->
+        <span class="s">run!</span> <!-- 外边距对行内块状元素上下左右都有用 -->
+    </div> 
+</body>
+</html>

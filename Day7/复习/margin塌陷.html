@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .outer {
+            width: 700px;
+            height: 500px;
+            background-color: cornflowerblue;
+            display:block;
+        }
+        .inner{
+            background-color: yellow;
+            height: 200px;
+            width: 200px;
+            margin: 50px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner">
+
+        </div>
+        <div class="inner">
+
+        </div>
+    <div class="outer" style="border: 1px solid pink;"> <!-- 父元素设置边框、内边距。或者父元素设置`overflow:hidden;` -->
+        <div class="inner">
+
+        </div>
+        <div class="inner">
+
+        </div>
+    <div class="outer" style="padding: 10px;"> <!-- 父元素设置边框、内边距。或者父元素设置`overflow:hidden;` --> 
+        <div class="inner">
+
+        </div>
+        <div class="inner">
+
+        </div>
+    <div class="outer" style="overflow: hidden;"> <!-- 父元素设置边框、内边距。或者父元素设置`overflow:hidden;` -->
+        <div class="inner">
+
+        </div>
+        <div class="inner">
+
+        </div>
+    </div>
+</body>
+
+</html>
