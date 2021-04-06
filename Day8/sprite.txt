@@ -1,0 +1,25 @@
+.img{background:url(../images/img.png)  no-repeat;}
+.movie_hover{height:28px;width:28px;background-position:0 0;}
+.movie_normal{height:28px;width:28px;background-position:-28px 0;}
+.people_hover{height:28px;width:28px;background-position:-56px 0;}
+.gas_normal{height:28px;width:28px;background-position:-84px 0;}
+.hotel_hover {height:28px;width:28px;background-position:-112px 0;}
+.hotel_normal{height:28px;width:28px;background-position:-140px 0;}
+.train_hover{height:28px;width:28px;background-position:-168px 0;}
+.train_normal{height:28px;width:28px;background-position:-196px 0;}
+.zhongchou_normal{height:28px;width:28px;background-position:-224px 0;}
+.people_normal{height:28px;width:28px;background-position:-252px 0;}
+.phone_hover{height:28px;width:28px;background-position:-280px 0;}
+.phone_normal{height:28px;width:28px;background-position:-308px 0;}
+.coin_normal{height:28px;width:28px;background-position:-336px 0;}
+.credit_hover{height:28px;width:28px;background-position:-364px 0;}
+.credit_normal{height:28px;width:28px;background-position:-392px 0;}
+.baitiao_hover{height:28px;width:28px;background-position:-420px 0;}
+.baitiao_normal{height:28px;width:28px;background-position:-448px 0;}
+.coin_hover{height:28px;width:28px;background-position:-476px 0;}
+.flight_hover{height:28px;width:28px;background-position:-504px 0;}
+.flight_normal{height:28px;width:28px;background-position:-532px 0;}
+.gas_hover{height:28px;width:28px;background-position:-560px 0;}
+.eat_hover{height:28px;width:28px;background-position:-588px 0;}
+.eat_red{height:28px;width:28px;background-position:-616px 0;}
+.f1f6dc5c207329f9{height:28px;width:28px;background-position:-644px 0;}
