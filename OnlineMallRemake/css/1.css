@@ -420,5 +420,117 @@ a{
     padding: 0 5px;
 
 }
+/* ································································ */
+#ranking{
+    width: 1200px;
+    height: 438px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+}
+#ranking #ranking_switch{
+    width: 312px;
+    height: 78px;
+    margin: 0 auto;
+    /* border: 1px solid pink; */
+    
+}
+#ranking #ranking_switch .switch{
 
+    width: 100px;
+    height: 78px;
+    /*  *//* border: 1px solid pink; */
+    float: left;
+    padding: 0 1px;
+    position: relative;
+    color: #E60012;
+    text-align: center;
+}
+#ranking #ranking_switch .switch .switch_img1{
+    width: 35px;
+    height: 35px;
+    background-image: url(./img/home/bg0.png);
+    background-position:-35px;
+    position: absolute;
+    top: 4px;
+    left: 28px;
+}
+#ranking #ranking_switch .switch .switch_img_unfocus{
+    width: 35px;
+    height: 35px;
+    background-image: url(./img/home/bg0.png);
+    background-position:-70px;
+    position: absolute;
+    top: 4px;
+    left: 28px;
+}
+#ranking #ranking_switch .switch h3{
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0px;
+    position: absolute;
+    top: 47px;
+    left: 15px;
+}
+#ranking #ranking_switch .switch:hover h3{
+    color: lightgreen;
+}
+#ranking #ranking_switch .switch #unfocus{
+    color: #999;
+}
+#ranking #ranking_content{
+    width: 1200px;
+    height: 360px;
+    /* border: 1px solid green; */
+    padding: 10px;
+    box-sizing: border-box;
+}
+#ranking #ranking_content .ranking-unit{
+    width: 269px;
+    float: left;
+}
+#ranking #ranking_content .ranking-unit p{
+    display: block;
+    margin: 0;
+    margin-top: 10px;
+    padding-left: 10px;
+    
+}
+#ranking #ranking_content .ranking-unit a{
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+
+    white-space: normal;
+}
+#ranking #ranking_content .ranking-unit a:hover{
+    color: lightgreen ;
+}
+#ranking #ranking_content .ranking-unit h3{
+    color: red;
+    font-weight: normal;
+    margin: 0;
+    margin-top: 15px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+#ranking #ranking_content .ranking-unit{
+    width: 269px;
+    height: 328px;
+    margin: 0px 12px 10px 12px;
+    border: 1px solid #E60012;
+    box-sizing: border-box;
+    
+}
+#ranking #ranking_content .ranking-unit .ranking-unit-img{
+    width: 230px;
+    height: 210px;  
+    margin: 5px 19.5px 18px 19.5px ;
+    text-align: center;
+
+}
+#ranking #ranking_content .ranking-unit .ranking-unit-img img{
+    width: 200px;
+    height: 200px;  
+}
 

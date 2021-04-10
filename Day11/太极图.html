@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            float: left;
+        }
+        #one {
+            width: 300px;
+            height: 600px;
+            border: 1px solid black;
+            position: relative;
+            border-right: 0px;
+            background-color: black;
+            border-radius: 1000px 0 0 1000px;
+        }
+        #two{
+            width: 150px;
+            height: 50%;
+            /* border: 1px solid black; */
+            position: absolute;
+            background-color: white;
+            bottom: 0;
+            right: 0;
+            border-right: 0px;
+            border-radius: 500px 0 0 500px;
+        }
+        #four{
+            width: 300px;
+            
+            height:600px;
+            border: 1px solid black;
+            position: relative;
+            border-left: 0;
+            border-radius: 0 600px 600px 0;
+        }
+        #five{
+            background-color: black;
+            width: 150px;
+            height: 50%;
+            /* border: 1px solid black; */
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 0 500px 500px 0;
+            border-left: 0;
+        }
+        #three{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            top: -185px;
+            left: 125px;
+            z-index: 1;
+
+            
+        }
+        #six{
+            border-left: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            bottom: -185px;
+            left: -25px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one">
+        <div id="two">
+            <div id="three">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="four">
+        <div id="five">
+            <div id="six">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

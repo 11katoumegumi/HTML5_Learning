@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单选和复选内框的练习</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        input{
+            display: none;
+        }
+        #single label {
+            margin-top: 10px;
+            display: block;
+            background-color: cornflowerblue;
+            opacity: .4;
+            color: white;
+            font-size: 14px;
+            width: 250px;
+            height: 30px;
+            line-height: 30px;
+        }
+        #single label::before{
+            display: inline-block;
+            content: "×";
+            width: 30px;
+            height: 30px;
+            
+            text-align: center;
+        }
+        #single input:checked ~ label{
+            opacity: 1;
+        }
+        #single input:checked ~ label::before{
+            content: "√";
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="single">
+        <ul>
+            <li>
+                <input type="radio" id="exia" name="gundam"> <label for="exia">Exia</label>
+            </li>
+            <li>
+                <input type="radio" id="oo7sg" name="gundam"> <label for="oo7sg">00 Gundam Seven Sword/Gun</label>
+            </li>
+            <li>
+                <input type="radio" id="oor" name="gundam"> <label for="oor">00 Raizer</label>
+            </li>
+            <li>
+                <input type="radio" id="FS" name="gundam"> <label for="FS">Quanta Full Saber</label>
+            </li>
+        </ul>
+
+    </div>
+</body>
+</html>

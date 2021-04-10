@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #outer{
+            margin: 0 auto;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li input {
+            display: none;
+        }
+
+        label {
+            /* text-align: center; */
+            display: inline-block;
+            width: 200px;
+            height: 30px;
+            line-height: 30px;
+            background-color: lightskyblue;
+            /* border: 1px solid salmon; */
+            opacity: .5;
+            font-size: 12px;
+            margin-top: 10px;
+            white-space: nowrap;
+        }
+
+        ul li label::before {
+            text-align: center;
+            display: inline-block;
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+            content: "×";
+            color: white;
+        }
+        ul li input:checked + label::before{
+            content: "√";
+        }
+        ul li input:checked + label{
+            opacity: 1;
+        }
+        ul li input:checked + label::after{
+            margin-left: 150px;
+            content: "别玩垃圾职业";
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        请选择你的DPS：
+        <ul>
+            <li><input type="checkbox" name="Tank[]" id="Monk"><label for="Monk">武僧</label></li>
+            <li><input type="checkbox" name="Tank[]]" id="Samurai"><label for="Samurai">武士</label></li>
+            <li><input type="checkbox" name="Tank[]" id="Drangoon"><label for="Drangoon">龙骑士</label></li>
+            <li><input type="checkbox" name="Tank[]" id="RedMage"><label for="RedMage">赤魔法师</label></li>
+            <li><input type="checkbox" name="Tank[]" id="BlackMage"><label for="BlackMage">黑魔法师</label></li>
+            <li><input type="checkbox" name="Tank[]" id="Bard"><label for="Bard">吟游诗人</label></li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+        #one{
+            position: relative;
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            border-radius: 50% 50% 50% 50%;
+        }
+        #two{
+            position: absolute;
+            left: 30%;
+            top: 40px;
+            z-index: 1;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        #three{
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border: 100px solid white;
+            border-left:50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-top: 50px solid transparent;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="one"> 
+        <div id="two">
+            <div id="three">
+
+            </div>
+    </div></div>
+</body>
+</html>

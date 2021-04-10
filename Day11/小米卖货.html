@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>11</title>
+    <style>
+        body {
+            background-color: #333333;
+        }
+
+        #outer {
+            
+            margin: 50px auto;
+            width: 1010px;
+            height: 170px;
+        }
+
+        #outer .one {
+            width: 316px;
+            height: 170px;
+            float: left;
+            margin: 0 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .one::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            display: none;
+        }
+
+        .one:hover::before {
+            border: 10px solid rgba(255, 255, 255, .5);
+            display: block;
+
+        }
+
+        #oter .one img {
+            position: absolute;
+            z-index: 2;
+        }
+    </style>
+
+<body>
+    <div id="outer">
+        <div class="one"><a href="##"> <img src="./x1.jpg" alt=""></a></div>
+        <div class="one"><a href="##"> <img src="./x2.jpg" alt=""></a></div>
+        <div class="one"><a href="##"> <img src="./x3.jpg" alt=""></a></div>
+
+    </div>
+
+</body>
+</head>
+
+</html>

@@ -182,87 +182,99 @@
             color: white;
             margin: 12px 0;
         }
-        /* ```````````````````````````````````````````````````````````` */
-        #ranking{
-            width: 1200px;
-            height: 438px;
-            margin: 0 auto;
-            border: 1px solid red;
-            margin-top: 10px;
-        }
-        #ranking #ranking_switch{
-            width: 312px;
-            height: 78px;
-            margin: 0 auto;
-            /* border: 1px solid pink; */
-            
-        }
-        #ranking #ranking_switch .switch{
 
-            width: 100px;
-            height: 78px;
-            /*  *//* border: 1px solid pink; */
-            float: left;
-            padding: 0 1px;
-            position: relative;
-            color: #E60012;
-            text-align: center;
-        }
-        #ranking #ranking_switch .switch .switch_img1{
-            width: 35px;
-            height: 35px;
-            background-image: url(./img/home/bg0.png);
-            background-position:-35px;
-            position: absolute;
-            top: 4px;
-            left: 28px;
-        }
-        #ranking #ranking_switch .switch .switch_img_unfocus{
-            width: 35px;
-            height: 35px;
-            background-image: url(./img/home/bg0.png);
-            background-position:-70px;
-            position: absolute;
-            top: 4px;
-            left: 28px;
-        }
-        #ranking #ranking_switch .switch h3{
-            font-weight: normal;
-            font-size: 16px;
-            margin: 0px;
-            position: absolute;
-            top: 47px;
-            left: 15px;
-        }
-        #ranking #ranking_switch .switch:hover h3{
-            color: lightgreen;
-        }
-        #ranking #ranking_switch .switch #unfocus{
-            color: #999;
-        }
-        #ranking #ranking_content{
+        /* ```````````````````````````````````````````````````````````` */
+        #guess {
             width: 1200px;
-            height: 360px;
-            border: 1px solid green;
-            padding: 10px;
-            box-sizing: border-box;
+            height: 282px;
+            margin: 0 auto;
+            margin-top: 15px;
+
         }
-        #ranking #ranking_content .ranking-unit{
-            width: 269px;
+
+        #guess #guess-title {
+            overflow: hidden;
+            height: 30px;
+            /* border: 1px solid black; */
+        }
+
+        #guess #guess-title h3 {
             float: left;
+            margin: 0px;
+            font-size: 20px;
+            vertical-align: middle;
         }
-        #ranking #ranking_content .ranking-unit a{
+
+        #guess #guess-title #guess-fresh {
+            float: right;
+            height: 30px;
+        }
+
+        #guess #guess-title #guess-fresh a {
             text-decoration: none;
             font-size: 12px;
-            color: black;
+            color: #5C5251;
+            line-height: 30px;
         }
-        #ranking #ranking_content .ranking-unit a:hover{
-            color: lightgreen ;
+
+        #guess #guess-title #guess-fresh a:hover {
+            color: lightgreen;
         }
-        #ranking #ranking_content .ranking-unit h3{
-            color: red;
-            font-weight: normal;
+
+        #guess #guess-title #guess-fresh #guess-fresh-img {
+            background-image: url(./img/home/icons.png);
+            background-repeat: no-repeat;
+            background-position: -420px -101px;
+            width: 28px;
+            height: 28px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        #guess #guess-list {
+            width: 1178px;
+            height: 250px;
+            padding: 0 10px;
+            border: 1px solid #E4E4E4;
+            font-size: 12px;
+        }
+
+        #guess #guess-list ul {
             
+        }
+
+        #guess #guess-list ul li {
+            float: left;
+            width: 196px;
+            text-align: center;
+            
+        }
+        #guess #guess-list ul li .guess-list-container #guess-list-container-text{
+
+            width: 143px;
+            height: 83px;
+            margin-top:2px; 
+            display: inline-block;
+            border-right: 1px solid #E4E4E4;
+        }
+        #guess #guess-list ul li .guess-list-container #guess-list-container-text h3{
+            text-align: left;
+            font-size: 20px;
+            color: #df3033;
+        }
+        #guess #guess-list ul li span {
+            display: block;
+            text-align: left;
+            
+        }
+        #guess #guess-list ul li .guess-list-container img{
+            margin-top: 10px;
+            width: 142px;
+            height: 142px;
+        }
+        #guess #guess-list ul li .guess-list-container img:hover    {
+            opacity: .8;
+            transform: scale(1.1);
         }
     </style>
     <link rel="stylesheet" href="./css/1.css">
@@ -543,7 +555,7 @@
                 <div class="switch_img1"></div>
                 <h3>热卖排行</h3>
             </a>
-            <a href="#"class="switch">
+            <a href="#" class="switch">
                 <div class="switch_img_unfocus" style="left: 26px;"></div>
                 <h3 id="unfocus">特价排行</h3>
             </a>
@@ -555,33 +567,104 @@
         <div id="ranking_content">
             <ul>
                 <li class="ranking-unit">
-                    <div class="ranking-unit-img"></div>
+                    <div class="ranking-unit-img"><img src="./img/home/1.jpg" alt=""></div>
                     <p><a href="##">【官网价直降1100】Apple iPhone 8 Plus 256GB 银色 移动联通电信4G手机</a></p>
-                    <p><h3>定金：¥100.00</h3></p>
+                    <p>
+                    <h3>定金：¥100.00</h3>
+                    </p>
                 </li>
                 <li class="ranking-unit">
-                    <div class="ranking-unit-img"></div>
+                    <div class="ranking-unit-img"><img src="./img/home/1.jpg" alt=""></div>
                     <p><a href="##">【官网价直降1100】Apple iPhone 8 Plus 256GB 银色 移动联通电信4G手机</a></p>
-                    <p><h3>定金：¥100.00</h3></p>
+                    <p>
+                    <h3>定金：¥100.00</h3>
+                    </p>
                 </li>
                 <li class="ranking-unit">
-                    <div class="ranking-unit-img"></div>
+                    <div class="ranking-unit-img"><img src="./img/home/1.jpg" alt=""></div>
                     <p><a href="##">【官网价直降1100】Apple iPhone 8 Plus 256GB 银色 移动联通电信4G手机</a></p>
-                    <p><h3>定金：¥100.00</h3></p>
+                    <p>
+                    <h3>定金：¥100.00</h3>
+                    </p>
                 </li>
                 <li class="ranking-unit">
-                    <div class="ranking-unit-img"></div>
+                    <div class="ranking-unit-img"><img src="./img/home/1.jpg" alt=""></div>
                     <p><a href="##">【官网价直降1100】Apple iPhone 8 Plus 256GB 银色 移动联通电信4G手机</a></p>
-                    <p><h3>定金：¥100.00</h3></p>
+                    <p>
+                    <h3>定金：¥100.00</h3>
+                    </p>
                 </li>
             </ul>
 
         </div>
     </div>
 
+    <div id="guess">
+        <div id="guess-title">
+            <h3>猜你喜欢</h3>
+            <div id="guess-fresh">
+                <a href="##">换一换</a>
+                <div id="guess-fresh-img"></div>
+            </div>
+        </div>
+        <div id="guess-list">
+            <ul>
+                <li>
+                    <div class="guess-list-container"><img src="./img/home/like_02.png" alt="">
+                        <div id="guess-list-container-text"> <span>阳光美包新款单肩包女包时尚子母包四件套女</span>
+                            <h3>¥116.00</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="guess-list-container"><img src="./img/home/like_03.png" alt="">
+                        <div id="guess-list-container-text"> <span>阳光美包新款单肩包女包时尚子母包四件套女</span>
+                            <h3>¥116.00</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="guess-list-container"><img src="img/home/like_01.png" alt="">
+                        <div id="guess-list-container-text"> <span>阳光美包新款单肩包女包时尚子母包四件套女</span>
+                            <h3>¥116.00</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="guess-list-container"><img src="./img/home/like_02.png" alt="">
+                        <div id="guess-list-container-text"> <span>阳光美包新款单肩包女包时尚子母包四件套女</span>
+                            <h3>¥116.00</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="guess-list-container"><img src="./img/home/like_03.png" alt="">
+                        <div id="guess-list-container-text"> <span>阳光美包新款单肩包女包时尚子母包四件套女</span>
+                            <h3>¥116.00</h3>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="guess-list-container"><img src="img/home/like_01.png" alt="">
+                        <div id="guess-list-container-text"> <span>阳光美包新款单肩包女包时尚子母包四件套女</span>
+                            <h3>¥116.00</h3>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="device">
+
+        
+    </div>
+
+
+
     <div id="blank"></div>
-
-
 
 
 
