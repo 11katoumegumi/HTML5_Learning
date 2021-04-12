@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        h3 {
+            margin: 0px;
+            padding: 0px 20px;
+            border-right: 2px solid white;
+        }
+
+        #outer {
+            width: 500px;
+            height: 30px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        #outer li {
+            float: left;
+            height: 30px;
+            
+        }
+
+        #outer li ul {
+            position: absolute;
+            /*  display: none; */
+            margin-top: 5px;
+            width: 90px;
+            font-size: 14px;
+            overflow: hidden;
+            /* overflow: hidden; */
+        }
+
+        #outer li:hover ul {
+            height: 150px;
+            width: 90px;
+            display: block;
+            /* background-color: salmon; */
+            
+            position: relative;
+        }
+
+        #outer li ul li {
+            overflow: hidden;
+            border-top: 1px solid #FFF;
+            width: 90px;
+            background-color: black;
+            margin-left: 90px;
+            transition-property: margin-left;
+            transition-duration: 2s;
+        }
+        #outer li:hover ul li {
+            margin-left: 0px;
+        }
+
+        #outer li ul a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #outer li ul li P {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="outer">
+        <li>
+            <h3>菜单1</h3>
+            <ul>
+                <li>
+                    <p><a href="##">子菜单1-1</a></p>
+                </li>
+                <li>
+                    <p><a href="##">子菜单1-2</a></p>
+                </li>
+                <li>
+                    <p><a href="##">子菜单1-3</a></p>
+                </li>
+                <li>
+                    <p><a href="##">子菜单1-4</a></p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h3>菜单2</h3>
+            <ul>
+                <li>
+                    <p><a href="##">子菜单2-1</a></p>
+                </li>
+                <li>
+                    <p><a href="##">子菜单2-2</a></p>
+                </li>
+                <li>
+                    <p><a href="##">子菜单2-3</a></p>
+                </li>
+                <li>
+                    <p><a href="##">子菜单2-4</a></p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h3>菜单3</h3>
+            <ul>
+                <li>
+                    <p><a href="##">子菜单31</a></p>
+                </li>
+                <li>
+                    <p><a href="##">子菜单32</a></p>
+                </li>
+                <li>
+                    <p><a href="##">子菜单33</a></p>
+                </li>
+                <li>
+                    <p><a href="##">子菜单34</a></p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

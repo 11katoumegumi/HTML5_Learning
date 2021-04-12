@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        ul {
+            margin: 0;
+            padding: 0px;
+            list-style-type: none;
+        }
+
+        ul li div img {
+            width: 300px;
+            height: 200px;
+        }
+
+        ul li {
+            
+            display: block;
+            width: 470px;
+            line-height: 36px;
+            font-size: 14px;
+            color: white;
+            font-weight: bold;
+            position: relative;
+            
+        }
+
+        ul li p {
+            display: block;
+            height: 36px;
+            line-height: 36px;
+            margin-bottom: 10px;
+        }
+        ul li div{
+            /* display: none; */
+            overflow: hidden;
+            width: 470px;
+            height: 0px;
+            transition-property: width,height;
+            transition-duration: 2s,2s,2s;
+        }
+        ul li:hover div{
+            /* display: block; */
+            height: 280px;
+        } 
+        ul li div img{
+            position: absolute;
+            left: 50%;
+            margin-left: -150px;
+            top: 50%;
+            margin-top: -80px;
+            border-radius: 5px;
+            opacity: 0;
+
+        }
+        ul li:hover div img{
+            opacity: 1;
+            transition-property: opacity;
+            transition-delay: 1s;
+            transition-duration: 900ms;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <p style="background-color: #DBE5F3;">温柔贤惠</p>
+            <div>
+                <img src="./01.jpg" alt="">
+            </div>
+        </li>
+        <li>
+            <p style="background-color: #F3E0E8;">甜美时尚</p>
+            <div>
+                <img src="./02.jpg" alt="">
+            </div>
+        </li>
+        <li >
+            <p style="background-color: #CF93C1;">独立稳重</p>
+            <div>
+                <img src="./03.jpg" alt="">
+            </div>
+        </li>
+        <li >
+            <p style="background-color: #BECB86;">妩媚性感</p>
+            <div>
+                <img src="./04.jpg" alt="">
+            </div>
+        </li>
+        <li>
+            <p  style="background-color:#AD9BAD;">女汉子</p>
+            <div >
+                <img src="./05.jpg" alt="">
+            </div>
+        </li>
+    </ul>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                width: 300px;
+                height: 300px;
+                border: 10px dotted salmon;
+                padding: 50px;
+                background-image: url(../../img/naotou.gif);
+                background-repeat: no-repeat;
+                background-size: 100px 100px;
+            }
+            #one{
+                background-origin: padding-box;
+            }
+            #two{
+                background-origin: border-box;
+            }
+            #three{
+                background-origin: content-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="one"></div><hr>
+        <div id="two"></div><hr>
+        <div id="three"></div><hr>
+    </body>
+</html>

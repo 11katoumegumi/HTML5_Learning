@@ -156,6 +156,39 @@
             border-right: 1px solid #E4E4E4;
             box-sizing: border-box;
         }
+
+        #brand{
+            min-width: 1200px;
+            width: 100%;
+            height: 67px;
+            margin: 10px 0;
+        }
+        #brand #brand-container{
+            width: 1200px;
+            height: 67px;
+            margin: 0 auto;
+        }
+        #brand #brand-container ul{
+            width: 1200px;
+            height: 37px;
+            padding: 15px 0;
+            overflow: hidden;
+            background-color: #F7F7F7;
+            line-height: 18px;
+        }
+        #brand #brand-container ul li {
+            float: left;
+            width: 120px;
+            height: 37px;
+            border-right: 1px solid #CCCCCC;
+            box-sizing: border-box;
+        }
+        #brand #brand-container ul li:last-of-type{
+            border: 0;
+        }
+        #brand #brand-container ul li img{
+            padding: 0 10px;
+        }
     </style>
     <link rel="stylesheet" href="./css/1.css">
 </head>
@@ -321,7 +354,7 @@
             <div id="center-display-prev"></div>
             <div id="center-display-next"></div>
             <div id="center-display-guide">
-                <ul>
+                <ul id="guide-ul">
                     <li>
                         <div id="center-display-guide-circle"></div>
                     </li>
@@ -629,14 +662,35 @@
     </div>
 
 
+    <div id="brand">
+        <div id="brand-container">
+        <ul>
+            <li><img src="./img/home/brand_21.png" alt=""></li>
 
-    <div id="blank"></div>
+            <li><img src="./img/home/brand_03.png" alt=""></li>
+
+            <li><img src="./img/home/brand_05.png" alt=""></li>
+
+            <li><img src="./img/home/brand_07.png" alt=""></li>
+
+            <li><img src="./img/home/brand_09.png" alt=""></li>
+
+            <li><img src="./img/home/brand_11.png" alt=""></li>
+
+            <li><img src="./img/home/brand_13.png" alt=""></li>
+
+            <li><img src="./img/home/brand_15.png" alt=""></li>
+
+            <li><img src="./img/home/brand_17.png" alt=""></li>
+
+            <li><img src="./img/home/brand_19.png" alt=""></li>
+        </ul>
+    </div>
+</div>
 
 
 
-
-
-    <!-- ````````````` -->
+    <div id="footer">
     <div id="footer-top">
         <ul class="footer-top-con">
             <li class="footer-top-title">购物指南</li>
@@ -681,7 +735,7 @@
         </ul>
         <ul class="footer-top-con">
             <li class="footer-top-title">帮助中心</li>
-            <li><img src="../../img/naotou.gif" alt=""></li>
+            <li><img src="./img/wx_cz.jpg" alt=""></li>
 
         </ul>
     </div>
@@ -691,7 +745,7 @@
                 <a href="#">关于我们</a>
             </li>
             <li>
-                <a href="#">练习我们</a>
+                <a href="#">联系我们</a>
             </li>
             <li>
                 <a href="#">关于我们</a>
@@ -721,6 +775,7 @@
         <p>地址：北京市昌平区宏福科技园综合楼6层</p>
         <p>京ICP备19006430号</p>
     </div>
+</div>  
 </body>
 
 </html>
