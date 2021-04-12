@@ -302,6 +302,7 @@ a{
     top: 50%;
     margin-top: -22px;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
 }
 #center #center-display #center-display-next{
     width: 27px;
@@ -311,6 +312,7 @@ a{
     top: 50%;
     margin-top: -22px;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
 }
 #center #center-news {
     position: absolute;
@@ -449,7 +451,8 @@ a{
 #ranking #ranking_switch .switch .switch_img1{
     width: 35px;
     height: 35px;
-    background-image: url(./img/home/bg0.png);
+    background-image: url("../img/home/bg0.png");
+    background-repeat: no-repeat;
     background-position:-35px;
     position: absolute;
     top: 4px;
@@ -458,8 +461,9 @@ a{
 #ranking #ranking_switch .switch .switch_img_unfocus{
     width: 35px;
     height: 35px;
-    background-image: url(./img/home/bg0.png);
-    background-position:-70px;
+    background-image: url("../img/home/bg0.png");
+    background-repeat: no-repeat;
+    background-position:0px;
     position: absolute;
     top: 4px;
     left: 28px;
@@ -534,3 +538,276 @@ a{
     height: 200px;  
 }
 
+/* ````````````````````````````````````````````````````````````````````` */
+#center #center-lifelist {
+    width: 250px;
+    height: 195px;
+    /* border-right: 1px solid #e4e4e4; */
+    border-left: 1px solid #e4e4e4;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    top: 185px;
+    font-size: 12px;
+}
+
+#center #center-lifelist ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#center #center-lifelist ul li {
+    padding: 0;
+    margin: 0;
+    width: 25%;
+    height: 65px;
+    float: left;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    border-left: 0;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    /* text-align: center; */
+}
+
+#center #center-lifelist ul li div {
+    width: 25%;
+    height: 40px;
+
+    float: left;
+}
+
+#center #center-lifelist ul li div {
+    width: 61px;
+    height: 40px;
+    background-image: url(../img/home/icons.png);
+    background-repeat: no-repeat;
+}
+
+#center #center-lifelist ul li span {
+    display: block;
+    padding-left: -1px;
+    width: 60px;
+    height: 23px;
+    line-height: 22px;
+    color: #333;
+}
+
+#center #center-lifelist #center-lifelist-content-huafei {
+    background-position: 0px -5px;
+}
+
+#center #center-lifelist #center-lifelist-content-jipiao {
+    background-position: -62px -5px;
+}
+
+#center #center-lifelist #center-lifelist-content-dianyingpiao {
+    background-position: -126px -5px;
+}
+
+#center #center-lifelist #center-lifelist-content-youxi {
+    background-position: -190px -5px;
+}
+
+#center #center-lifelist #center-lifelist-content-caipiao {
+    background-position: 0px -76px;
+}
+
+#center #center-lifelist #center-lifelist-content-jiayouzhan {
+    background-position: -62px -76px;
+}
+
+#center #center-lifelist #center-lifelist-content-jiudian {
+    background-position: -126px -76px;
+}
+
+#center #center-lifelist #center-lifelist-content-huochepiao {
+    background-position: -190px -76px;
+}
+
+#center #center-lifelist #center-lifelist-content-zhongchou {
+    background-position: 0px -146px;
+}
+
+#center #center-lifelist #center-lifelist-content-licai {
+    background-position: -62px -146px;
+}
+
+#center #center-lifelist #center-lifelist-content-lipinka {
+    background-position: -126px -146px;
+}
+
+#center #center-lifelist #center-lifelist-content-baitiao {
+    background-position: -190px -146px;
+}
+
+#center #center-sellimg {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    width: 250px;
+    height: 75px;
+    opacity: .8;
+    background-image: url(../img/home/ad1.png);
+    background-repeat: no-repeat;
+}
+
+#center #center-sellimg:hover {
+    opacity: 1;
+}
+
+/* ``````````````````````````````````````````````````````` */
+#show {
+    min-width: 1200px;
+    width: 100%;
+    height: 165px;
+    margin-top: -1px;
+}
+
+#show #show-container {
+    width: 1200px;
+    height: 165px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+
+}
+
+#show #show-container ul {
+    font-size: 0px;
+}
+
+#show #show-container ul li {
+    float: left;
+    width: 20.83%;
+    height: 165px;
+}
+
+#show #show-container ul li .today-sell {
+    width: 100%;
+    height: 165px;
+}
+
+#show #show-container ul #clock {
+    width: 16.67%;
+    background-color: #5C5251;
+    position: relative;
+    text-align: center;
+}
+
+#show #show-container ul #clock #today {
+    width: 100%;
+    height: 165px;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+
+#show #show-container ul #clock #clock-img {
+    /*         position: absolute;
+    top: 50%;
+    left: 0; */
+}
+
+#show #show-container ul h3 {
+    position: absolute;
+    z-index: 100;
+    width: 200px;
+    height: 30px;
+    display: block;
+    font-size: 18px;
+    color: white;
+    margin: 12px 0;
+}
+
+/* ```````````````````````````````````````````````````````````` */
+#guess {
+    width: 1200px;
+    height: 282px;
+    margin: 0 auto;
+    margin-top: 15px;
+
+}
+
+#guess #guess-title {
+    overflow: hidden;
+    height: 30px;
+    /* border: 1px solid black; */
+}
+
+#guess #guess-title h3 {
+    float: left;
+    margin: 0px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+#guess #guess-title #guess-fresh {
+    float: right;
+    height: 30px;
+}
+
+#guess #guess-title #guess-fresh a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #5C5251;
+    line-height: 30px;
+}
+
+#guess #guess-title #guess-fresh a:hover {
+    color: lightgreen;
+}
+
+#guess #guess-title #guess-fresh #guess-fresh-img {
+    background-image: url(../img/home/icons.png);
+    background-repeat: no-repeat;
+    background-position: -420px -101px;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#guess #guess-list {
+    width: 1178px;
+    height: 250px;
+    padding: 0 10px;
+    border: 1px solid #E4E4E4;
+    font-size: 12px;
+}
+
+#guess #guess-list ul {
+    
+}
+
+#guess #guess-list ul li {
+    float: left;
+    width: 196px;
+    text-align: center;
+    
+}
+#guess #guess-list ul li .guess-list-container #guess-list-container-text{
+
+    width: 143px;
+    height: 83px;
+    margin-top:2px; 
+    display: inline-block;
+    border-right: 1px solid #E4E4E4;
+}
+#guess #guess-list ul li .guess-list-container #guess-list-container-text h3{
+    text-align: left;
+    font-size: 20px;
+    color: #df3033;
+}
+#guess #guess-list ul li span {
+    display: block;
+    text-align: left;
+    
+}
+#guess #guess-list ul li .guess-list-container img{
+    margin-top: 10px;
+    width: 142px;
+    height: 142px;
+}
+#guess #guess-list ul li .guess-list-container img:hover    {
+    opacity: .8;
+    transform: scale(1.1);
+}

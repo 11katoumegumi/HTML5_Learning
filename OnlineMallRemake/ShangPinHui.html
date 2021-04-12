@@ -3,278 +3,158 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>尚品汇商城头部</title>
+    <title>尚品汇商城</title>
     <style>
-        #center #center-lifelist {
-            width: 250px;
-            height: 195px;
-            /* border-right: 1px solid #e4e4e4; */
-            border-left: 1px solid #e4e4e4;
-            box-sizing: border-box;
-            position: absolute;
-            right: 0;
-            top: 185px;
-            font-size: 12px;
-        }
-
-        #center #center-lifelist ul {
-            list-style-type: none;
-            text-align: center;
-        }
-
-        #center #center-lifelist ul li {
-            padding: 0;
-            margin: 0;
-            width: 25%;
-            height: 65px;
-            float: left;
-            border: 1px solid #e4e4e4;
-            border-top: 0;
-            border-left: 0;
-            border-collapse: collapse;
-            box-sizing: border-box;
-            /* text-align: center; */
-        }
-
-        #center #center-lifelist ul li div {
-            width: 25%;
-            height: 40px;
-
-            float: left;
-        }
-
-        #center #center-lifelist ul li div {
-            width: 61px;
-            height: 40px;
-            background-image: url(./img/home/icons.png);
-            background-repeat: no-repeat;
-        }
-
-        #center #center-lifelist ul li span {
-            display: block;
-            padding-left: -1px;
-            width: 60px;
-            height: 23px;
-            line-height: 22px;
-            color: #333;
-        }
-
-        #center #center-lifelist #center-lifelist-content-huafei {
-            background-position: 0px -5px;
-        }
-
-        #center #center-lifelist #center-lifelist-content-jipiao {
-            background-position: -62px -5px;
-        }
-
-        #center #center-lifelist #center-lifelist-content-dianyingpiao {
-            background-position: -126px -5px;
-        }
-
-        #center #center-lifelist #center-lifelist-content-youxi {
-            background-position: -190px -5px;
-        }
-
-        #center #center-lifelist #center-lifelist-content-caipiao {
-            background-position: 0px -76px;
-        }
-
-        #center #center-lifelist #center-lifelist-content-jiayouzhan {
-            background-position: -62px -76px;
-        }
-
-        #center #center-lifelist #center-lifelist-content-jiudian {
-            background-position: -126px -76px;
-        }
-
-        #center #center-lifelist #center-lifelist-content-huochepiao {
-            background-position: -190px -76px;
-        }
-
-        #center #center-lifelist #center-lifelist-content-zhongchou {
-            background-position: 0px -146px;
-        }
-
-        #center #center-lifelist #center-lifelist-content-licai {
-            background-position: -62px -146px;
-        }
-
-        #center #center-lifelist #center-lifelist-content-lipinka {
-            background-position: -126px -146px;
-        }
-
-        #center #center-lifelist #center-lifelist-content-baitiao {
-            background-position: -190px -146px;
-        }
-
-        #center #center-sellimg {
-            position: absolute;
-            right: 0;
-            bottom: 15px;
-            width: 250px;
-            height: 75px;
-            opacity: .8;
-            background-image: url(./img/home/ad1.png);
-        }
-
-        #center #center-sellimg:hover {
-            opacity: 1;
-        }
-
-        /* ``````````````````````````````````````````````````````` */
-        #show {
-            min-width: 1200px;
+        #household{
             width: 100%;
-            height: 165px;
-            margin-top: -1px;
-        }
-
-        #show #show-container {
-            width: 1200px;
-            height: 165px;
-            /* border: 1px solid red; */
-            margin: 0 auto;
-
-        }
-
-        #show #show-container ul {
-            font-size: 0px;
-        }
-
-        #show #show-container ul li {
-            float: left;
-            width: 20.83%;
-            height: 165px;
-        }
-
-        #show #show-container ul li .today-sell {
-            width: 100%;
-            height: 165px;
-        }
-
-        #show #show-container ul #clock {
-            width: 16.67%;
-            background-color: #5C5251;
-            position: relative;
-            text-align: center;
-        }
-
-        #show #show-container ul #clock #today {
-            width: 100%;
-            height: 165px;
-            padding: 30px 0;
-            box-sizing: border-box;
-        }
-
-        #show #show-container ul #clock #clock-img {
-            /*         position: absolute;
-            top: 50%;
-            left: 0; */
-        }
-
-        #show #show-container ul h3 {
-            position: absolute;
-            z-index: 100;
-            width: 200px;
-            height: 30px;
-            display: block;
-            font-size: 18px;
-            color: white;
-            margin: 12px 0;
-        }
-
-        /* ```````````````````````````````````````````````````````````` */
-        #guess {
-            width: 1200px;
-            height: 282px;
-            margin: 0 auto;
+            height: 411px;
             margin-top: 15px;
+            
+        }
+        #household-container{
+            width: 1200px;
+            height: 411px;
+            margin: 0 auto;
+/*             border: 1px solid salmon; */
 
         }
-
-        #guess #guess-title {
-            overflow: hidden;
-            height: 30px;
-            /* border: 1px solid black; */
+        #household #household-container #household-title{
+            width: 100%;
+            height: 48px;
         }
-
-        #guess #guess-title h3 {
-            float: left;
-            margin: 0px;
+        #household #household-container #household-title h3{
+            color: #c81623;
+            margin: 9px 0;
             font-size: 20px;
-            vertical-align: middle;
+            float: left;
         }
-
-        #guess #guess-title #guess-fresh {
-            float: right;
-            height: 30px;
+        #household #household-container #household-title ul{
+            float:right;
+            margin-top: 10px;
         }
-
-        #guess #guess-title #guess-fresh a {
-            text-decoration: none;
+        #household #household-container #household-title ul li {
+            float: left;
+            line-height: 18px;
+        }   
+        #household #household-container #household-title ul li a{
+            color: #666;
             font-size: 12px;
-            color: #5C5251;
-            line-height: 30px;
         }
-
-        #guess #guess-title #guess-fresh a:hover {
+        #household #household-container #household-title ul li:first-child a{
+            color: #c81623;
+        }
+        #household #household-container #household-title ul li a:hover{
             color: lightgreen;
         }
-
-        #guess #guess-title #guess-fresh #guess-fresh-img {
-            background-image: url(./img/home/icons.png);
-            background-repeat: no-repeat;
-            background-position: -420px -101px;
-            width: 28px;
-            height: 28px;
+        #household #household-container #household-title ul li a::after{
+            content: "|";
+            padding: 0 10px;
+        }
+        #household #household-container #household-title ul li:last-child a::after{
+            content: "";
+            padding: 0 10px;
+        }
+        #household #household-container #household-container-total {
+            font-size: 0;
+            height: 360px;
+            border-top: 2px solid #c81623;
+/*             border: 1px solid salmon; */
+            overflow: hidden;
+            border-bottom: 1px solid #E4E4E4;
+        }
+        #household #household-container #household-container-total #household-left{
             display: inline-block;
+            background-color: #F7F7F7;
+            width: 210px;
+            height: 100%;
+            
+            /* border: 1px solid pink; */
+
+        }
+        #household #household-container #household-container-total #household-left #household-link{
+            
+            width: 100%;
+            height: 81px;
+            padding: 15px 0;
+        }
+        #household #household-container #household-container-total #household-left #household-link ul li{
+            font-size: 12px;
+            float: left;
+            width: 40%;
+            margin: 0 10px;
+            border-bottom: 1px solid #e4e4e4;
+            text-align: center;
+            line-height: 26px;
+            color: #333;
+        }
+        #household #household-container #household-container-total #household-left #household-gacha img{
+            width: 100%;
+        }
+        #household #household-container #household-container-total #household-center{
+            display: inline-block;
+            width: 330px;
+            height: 100%;
+            /* border: 1px solid black; */
+            vertical-align: top;
+            overflow: hidden;
+            position: relative;
+        }
+        #household #household-container #household-container-total #household-center ul{
+            width: 9000px;
+        }
+        #household #household-container #household-container-total #household-center li{
+            float: left;
+        }
+        #household #household-container #household-container-total #household-center::before{
+            display: block;
+            content: "";
+            width: 27px;
+            height: 44px;
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            margin-top: -22px;
             cursor: pointer;
         }
-
-        #guess #guess-list {
-            width: 1178px;
-            height: 250px;
-            padding: 0 10px;
-            border: 1px solid #E4E4E4;
-            font-size: 12px;
-        }
-
-        #guess #guess-list ul {
-            
-        }
-
-        #guess #guess-list ul li {
-            float: left;
-            width: 196px;
-            text-align: center;
-            
-        }
-        #guess #guess-list ul li .guess-list-container #guess-list-container-text{
-
-            width: 143px;
-            height: 83px;
-            margin-top:2px; 
-            display: inline-block;
-            border-right: 1px solid #E4E4E4;
-        }
-        #guess #guess-list ul li .guess-list-container #guess-list-container-text h3{
-            text-align: left;
-            font-size: 20px;
-            color: #df3033;
-        }
-        #guess #guess-list ul li span {
+        #household #household-container #household-container-total #household-center::after{
             display: block;
-            text-align: left;
-            
+            content: "";
+            width: 27px;
+            height: 44px;
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            margin-top: -22px;
+            cursor: pointer;}
+
+        #household #household-container #household-container-total #household-right{
+            display: inline-block;
+            width: 660px;
+            height: 100%;
+            /* border: 1px solid black; */
+            vertical-align: top;
+            overflow: hidden;
+            position: relative;
         }
-        #guess #guess-list ul li .guess-list-container img{
-            margin-top: 10px;
-            width: 142px;
-            height: 142px;
+        #household #household-container #household-container-total #household-right #split-left{
+            display: inline-block;
+            width: 220px;
+            border-right: 1px solid #E4E4E4;
+            box-sizing: border-box;
         }
-        #guess #guess-list ul li .guess-list-container img:hover    {
-            opacity: .8;
-            transform: scale(1.1);
+        #household #household-container #household-container-total #household-right #split-center{
+            display: inline-block;
+            width: 220px;
+            border-right: 1px solid #E4E4E4;
+            box-sizing: border-box;
+        }
+        #household #household-container #household-container-total #household-right #split-right{
+            display: inline-block;
+            width: 220px;
+            border-right: 1px solid #E4E4E4;
+            box-sizing: border-box;
         }
     </style>
     <link rel="stylesheet" href="./css/1.css">
@@ -657,8 +537,94 @@
 
     </div>
 
-    <div id="device">
+    <div id="household">
+        <div id="household-container">
+            <div id="household-title">
+                <h3>家用电器</h3>
+                <ul>
+                    <li><a href="###">热门</a></li>
+                    <li><a href="###">大家电</a></li>
+                    <li><a href="###">生活电器</a></li>
+                    <li><a href="###">厨房电器</a></li>
+                    <li><a href="###">应季电器</a></li>
+                    <li><a href="###">空气/净水</a></li>
+                    <li><a href="###">高端电器</a></li>
+                </ul>
+            </div>
+            <div id="household-container-total">
+                <div id="household-left">
+                    <div id="household-link">
+                        <ul>
+                            <li>节能补贴</li>
+                            <li>4k电视</li>
+                            <li>空气净化器</li>
+                            <li>IH电饭煲</li>
+                            <li>滚筒洗衣机</li>
+                            <li>电热水器</li>
+                        </ul>
+                    </div>
+                    <div id="household-gacha"><img src="./img/home/floor-1-1.png" alt=""></div>
+                </div>
+                <div id="household-center">
+                    <ul>
+                        <li><img src="./img/home/floor-1-b01.png" alt=""></li>
+                        <li><img src="./img/home/floor-1-b02.png" alt=""></li>
+                        <li><img src="./img/home/floor-1-b03.png" alt=""></li>
+                    </ul>
+                </div>
+                <div id="household-right">
+                    <div id="split-left"><img src="./img/home/floor-1-2.png" alt=""><img src="img/home/floor-1-3.png" alt=""></div>
+                    <div id="split-center"><img src="./img/home/floor-1-4.png" alt=""></div>
+                    <div id="split-right"><img src="./img/home/floor-1-5.png" alt=""><img src="./img/home/floor-1-6.png" alt=""></div>
+                </div>
 
+            </div>
+        </div>
+        
+    </div>
+    <div id="household">
+        <div id="household-container">
+            <div id="household-title">
+                <h3>家用电器</h3>
+                <ul>
+                    <li><a href="###">热门</a></li>
+                    <li><a href="###">大家电</a></li>
+                    <li><a href="###">生活电器</a></li>
+                    <li><a href="###">厨房电器</a></li>
+                    <li><a href="###">应季电器</a></li>
+                    <li><a href="###">空气/净水</a></li>
+                    <li><a href="###">高端电器</a></li>
+                </ul>
+            </div>
+            <div id="household-container-total">
+                <div id="household-left">
+                    <div id="household-link">
+                        <ul>
+                            <li>节能补贴</li>
+                            <li>4k电视</li>
+                            <li>空气净化器</li>
+                            <li>IH电饭煲</li>
+                            <li>滚筒洗衣机</li>
+                            <li>电热水器</li>
+                        </ul>
+                    </div>
+                    <div id="household-gacha"><img src="./img/home/floor-1-1.png" alt=""></div>
+                </div>
+                <div id="household-center">
+                    <ul>
+                        <li><img src="./img/home/floor-1-b01.png" alt=""></li>
+                        <li><img src="./img/home/floor-1-b02.png" alt=""></li>
+                        <li><img src="./img/home/floor-1-b03.png" alt=""></li>
+                    </ul>
+                </div>
+                <div id="household-right">
+                    <div id="split-left"><img src="./img/home/floor-1-2.png" alt=""><img src="img/home/floor-1-3.png" alt=""></div>
+                    <div id="split-center"><img src="./img/home/floor-1-4.png" alt=""></div>
+                    <div id="split-right"><img src="./img/home/floor-1-5.png" alt=""><img src="./img/home/floor-1-6.png" alt=""></div>
+                </div>
+
+            </div>
+        </div>
         
     </div>
 
