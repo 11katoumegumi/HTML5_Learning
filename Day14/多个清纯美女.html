@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            margin: 0;
+            background-color: #E9E9E9;
+            position: relative;
+        }
+        #one{  
+            position: absolute;
+            left: 30%;
+            margin-left: -300px;
+            top: 50%;
+            margin-top: 30px;
+            width: 250px;
+            height: 320px;
+            background-color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: #CCc 5px 5px 10px;
+            transform: rotate(-30deg) ;
+            transition-property: width,height,transform;
+            transition-duration: 1s;
+            overflow: hidden;
+        }
+        #one:hover{
+            transform: rotate(0deg) scale(1.3);
+            z-index: 100;
+        }
+        #two{  
+            position: absolute;
+            left: 40%;
+            margin-left: -300px;
+            top: 50%;
+            margin-top: 30px;
+            width: 150px;
+            height: 220px;
+            background-color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: #CCc 5px 5px 10px;
+            transform: rotate(10deg) ;
+            transition-property: width,height,transform;
+            transition-duration: 1s;
+        }
+        #two:hover{
+            transform: rotate(0deg) scale(1.3);
+            z-index: 100;
+        }
+        #three{  
+            position: absolute;
+            right: 30%;
+            margin-left: -300px;
+            bottom: 50%;
+            margin-top: 30px;
+            width: 250px;
+            height: 320px;
+            background-color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: #CCc 5px 5px 10px;
+            transform: rotate(-30deg) ;
+            transition-property: width,height,transform,box-shadow;
+            transition-duration: 1s;
+            overflow: hidden;
+        }
+        #three:hover{
+            transform: rotate(0deg) scale(1.3);
+            z-index: 100;
+            box-shadow: #CCc 10px 05px 10px;
+        }
+        #four{  
+            position: absolute;
+            right: 40%;
+            margin-left: -300px;
+            bottom: 50%;
+            margin-top: 30px;
+            width: 150px;
+            height: 220px;
+            background-color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: #CCc 5px 5px 10px;
+            transform: rotate(40deg) ;
+            transition-property: width,height,transform;
+            transition-duration: 1s;
+        }
+        #four:hover{
+            transform: rotate(0deg) scale(1.3);
+            z-index: 100;
+        }
+        img{
+            width: 100%;
+            
+/*             transition-property: transform;
+            transition-duration: 1s; */
+        }
+    </style>
+</head>
+<body>
+    <div id="one">
+        <img src="./img/3638f61d8a1d4ea0b5e2e3b180353c6a.jpg" alt="">
+    </div>
+    <div id="two">
+        <img src="./img/0955cf751bf74cf7986c9f1d5b2fe26b.jpg" alt="">
+    </div>
+    <div id="three">
+        <img src="./img/33d5549585dd4c9eac5213332b8b9501.jpg" alt="">
+    </div>
+    <div id="four">
+        <img src="./img/434c3e1b28bb46f89c680981ba5fc8a0.jpg" alt="">
+    </div>
+<!--     <div id="five">
+        <img src="./img/45b48ab655714975ac4c9cc7ae20a064.jpg" alt="">
+    </div>
+    <div id="six">
+        <img src="./img/5a0d5a3521a3402f94fa824d700e1749.jpg" alt="">
+    </div> -->
+</body>
+</html>

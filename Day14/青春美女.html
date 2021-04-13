@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+            margin: 0;
+            background-color: #E9E9E9;
+            position: relative;
+        }
+        div{  
+            position: absolute;
+            left: 50%;
+            margin-left: -150px;
+            top: 50%;
+            margin-top: -250px;
+            width: 300px;
+            height: 350px;
+            background-color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: #333 1px 1px 10px;
+            transform: rotate(10deg) ;
+            transition-property: width,height transform;
+            transition-duration: 1s;
+        }
+        div::after{
+            width: 100px;
+            content: "清纯小美女";
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            margin-left: -40px;
+            /* font-weight: bold; */
+        }
+        div:hover{
+            transform: rotate(0deg) scale(1.5);
+        }
+/*         div:hover img{
+            transform: scale(1.5);
+        } */
+        img{
+            width: 280px;
+            height: 280px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -160px;
+            margin-left: -140px;
+/*             transition-property: transform;
+            transition-duration: 1s; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./img/3638f61d8a1d4ea0b5e2e3b180353c6a.jpg" alt="">
+    </div>
+</body>
+</html>

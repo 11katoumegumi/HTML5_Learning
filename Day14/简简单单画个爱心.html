@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            height: 500px;
+            border: 1px solid salmon;
+            margin: 0 auto;
+            position: relative;
+        }
+        div:hover::before,::after{
+            transform: scale(1.1) rotate(45deg);
+        }
+        div:hover::after{
+            transform: scale(1.1) rotate(-45deg);
+            left: 139px;
+        }
+        div::before{
+            display: inline-block;
+            content: "";
+            width: 150px;
+            height: 100px;
+            background-color:hotpink;
+            border-radius: 100px 0  0 100px;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 200px;
+            left: 100px;
+        }
+        div::after{
+            display: inline-block;
+            content: "";
+            width: 150px;
+            height: 100px;
+            background-color:hotpink;
+            border-radius: 0 100px 100px 0;
+            transform: rotate(-45deg);
+            position: absolute;
+            top: 200px;
+            left: 135px;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

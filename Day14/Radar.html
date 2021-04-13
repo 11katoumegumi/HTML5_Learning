@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html{
+            height: 100%;
+            background-color: #000; 
+        }
+        body{
+            height: 100%;
+            position: relative;
+            background-image:
+            repeating-linear-gradient(transparent 0%,transparent 95%,#0B591A 95%,#0B591A 100%),
+            repeating-linear-gradient(90deg,transparent 0%,transparent 95%,#04250B 95%,#04250B 100%);
+            background-size: 40px 40px;
+        }
+        #one{
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-48.3%,-51%);
+            background-image: 
+            radial-gradient(transparent 0%,transparent 5%,#1DE445 5% ,#1DE445 5.7%,transparent 5.7%,transparent 20%,#1DE445 20%,#1DE445 20.7%,transparent 20.7%,transparent 40%,#1DE445 40%,#1DE445 40.7%,transparent 40.7% ,transparent 69.3%,#1DE445 69.3%,#1DE445 71%,transparent 71%),
+            linear-gradient(transparent 0%,transparent 50%,#1DE445 50%,#1DE445 50.7%,transparent 50.7%),
+            linear-gradient(to right ,transparent 0%,transparent 50%,#1DE445 50%,#1DE445 50.7%,transparent 50.7%);
+        }
+        #two{
+            position: relative;
+            width: 250px;
+            height: 250px;
+            border-radius: 250px 0 0;
+            /* background-color: #fff; */
+            background-image: linear-gradient(205deg ,#04F233 0%,transparent 70%);
+            animation-name: test;
+            animation-duration: 5s;
+            transform-origin: 250px 250px;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes test{
+            0%{
+                transform:rotate(0deg);
+            }
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+        @keyframes flash{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: .6;
+            }
+        }
+        @keyframes positionchange1{
+            100%{
+                right: 20%;
+                 top: 10%;
+            }
+        }
+        @keyframes positionchange2{
+            100%{
+                right: 35%;
+                 top: 62%;
+            }
+        }
+        @keyframes positionchange3{
+            100%{
+                right: 35%;
+                 top: 99%;
+            }
+        }
+        #dot1{
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color:#04F233 ;
+            right: 40%;
+            top: 75%;
+/*             border: 3px solid white; */
+            animation-name: flash,positionchange1;
+            animation-duration: 2s,10s;
+            animation-iteration-count: infinite,infinite;
+            animation-direction: alternate,alternate;
+            animation-timing-function: ease-out;
+        }
+        #dot2{
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color:#04F233 ;
+/*             border: 1px solid white; */
+            right: 42%;
+            top: 75%;
+            animation-name: flash,positionchange2;
+            animation-duration: 2s,10s;
+            animation-iteration-count: infinite,infinite;
+            animation-direction: alternate,alternate;
+            animation-timing-function: ease-out;
+        }
+        #dot3{
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color:#04F233 ;
+/*             border: 1px solid white; */
+            right: 50%;
+            top: 80%;
+            animation-name: flash,positionchange3;
+            animation-duration: 2s,10s;
+            animation-iteration-count: infinite,infinite;
+            animation-direction: alternate,alternate;
+            animation-timing-function: ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div id="one">
+        <div id="two">
+            <div id="dot1"> </div>
+            <div id="dot2"> </div>
+            <div id="dot3"> </div>
+        </div>
+    </div>
+</body>
+</html>
