@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./base.css">
+    <style>
+        @font-face {
+            font-family: 'iconfont';
+            src: url('./font/iconfont.eot');
+            src: url('./font/iconfont.eot?#iefix') format('embedded-opentype'),
+                url('./font/iconfont.woff2') format('woff2'),
+                url('./font/iconfont.woff') format('woff'),
+                url('./font/iconfont.ttf') format('truetype'),
+                url('./font/iconfont.svg#iconfont') format('svg');
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        html body {
+            margin: 0px;
+            width: 100%;
+        }
+
+        #outer {
+            width: 100%;
+            background-color: #2D4373;
+            font-size: 0px;
+        }
+
+        #logo,
+        #text1,
+        #text2,
+        #text3,
+        #search {
+            background-color: #3B5998;
+            color: white;
+            text-align: center;
+            height: 45px;
+            line-height: 45px;
+            box-sizing: border-box;
+            
+        }
+
+        #logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        #search{
+            position: relative;
+            
+        }
+        #search input {
+            position: relative;
+            top: 5px;
+            width: 65%;
+            height: 70%;
+            background-color: #CBD9F5;
+            border-radius: 5px 0 0 5px;
+            border: 0;
+            padding-left: 10px;
+        }
+        #search button{
+            position: absolute;
+            top: 15%;
+            width: 10%;
+            height: 69%;
+            background-color:#CBD9F5 ;
+            border: 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        @media (min-width:768px) and (max-width:991px) {
+            #search {
+                height: 60px;
+                font-size: 20px;
+                margin-top: 5px;
+                background-color: transparent;
+                /* left: -1%; */
+                width: 100%;
+                margin-left: -6%;
+            }
+
+            #search input {
+                height: 50px;
+                font-size: 17px;
+                width: 70%;
+            }
+
+            #search input::placeholder {
+                padding-left: 43%;
+            }
+            #search button{
+                top: 8%;
+                height: 83%;
+            }
+        }
+
+        #logo a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #text1 a,
+        #text2 a,
+        #text3 a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        #text1 a,
+        #text2 a,
+        #text3 a:visited {
+            color: white;
+        }
+
+        @media (max-width:767px) {
+            #logo {
+                height: 80px;
+                line-height: 80px;
+                font-size: 35px;
+            }
+
+            #text1,
+            #text2,
+            #text3 {
+                transform: scale(.95);
+                /*                     padding: 0 10px;
+                    box-sizing: border-box;
+                    background-clip: content-box; */
+                border-radius: 5px;
+                margin-top: 5px;
+                font-size: 14px;
+            }
+
+            #search {
+                position: relative;
+                height: 60px;
+                font-size: 20px;
+                margin-top: 5px;
+                background-color: transparent;
+                width: 100%;
+                margin-left: -5%;
+            }
+
+            #search input {
+                height: 50px;
+                font-size: 17px;
+
+            }
+            #search button{
+                top: 8%;
+                height: 83%;
+            }
+            #search input::placeholder {
+                padding-left: 43%;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="row clear" id="outer">
+        <div class="col-xs-12  col-sm-3 col-md-3  " id="logo"><a href="###">IBiji.Tech</div>
+        <div class="col-xs-12 col-sm-3  col-md-2  " id="text1"> <a href="###">系列教程</a></div>
+        <div class="col-xs-12  col-sm-3  col-md-2  " id="text2"><a href="###">实例教程</a></div>
+        <div class="col-xs-12 col-sm-3  col-md-2  " id="text3"><a href="###">工具推荐</a></div>
+        <div class="col-xs-12 col-sm-12  col-md-3" id="search"><input type="text" placeholder="分享技术成就你我！">
+             <button type="button" class="iconfont">&#xe637;</button></div>
+    </div>
+
+</body>
+
+</html>
