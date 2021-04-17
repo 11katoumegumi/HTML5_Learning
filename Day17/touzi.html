@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #outer {
+            width: 360px;
+            height: 220px;
+            border: 1px solid green;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #outer>div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            display: flex;
+        }
+        #outer div div {
+            display: flex;
+        }
+        #outer div div div{
+            width: 25px;
+            height:25px;
+            border-radius: 50%;
+            background-image: radial-gradient(blue 0%, black 100%);
+            align-self: center;
+        }
+        #one {
+            justify-content: center;
+        }
+
+        #one::before {
+            content: "";
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-image: radial-gradient(red 0%, black 100%);
+            align-self: center;
+        }
+
+        #two {
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        #two1{
+            width: 100px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #two2{
+            width: 100px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #two1::before {
+            display: block;
+            content: "";
+            width: 25px;
+            height:25px;
+            border-radius: 50%;
+            background-image: radial-gradient(blue 0%, black 100%);
+            align-self: center;
+        }
+
+        #two2::before {
+            display: block;
+            content: "";
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-image: radial-gradient(blue 0%, black 100%);
+            align-self: center;
+        }
+        #three{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        #three1,#three2,#three3{
+            width: 100px;
+            
+            display: flex;
+        }
+        #three2{
+            justify-content: center;
+        }
+        #three3{
+            justify-content: flex-end;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        #four{
+            flex-wrap: wrap;
+            
+        }
+        #four1,#four2,#four3,#four4{
+            width: 50px;
+            height: 50px;
+/*             border: 1px solid black;
+            box-sizing: border-box; */
+            justify-content: center;
+        }
+        #four1::before,#four2::before,#four3::before,#four4::before{
+            content: "";
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-image: radial-gradient(red 0%, black 100%);
+            align-self: center;
+        }
+        #five{
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        #five1,#five2,#five3,#five4,#five5{
+            width: 33px;
+            height: 50px;
+ /*            border: 1px solid black;
+            box-sizing: border-box; */
+            justify-content: center;
+        }
+        #five1::before,#five2::before,#five3::before,#five4::before,#five5::before{
+            content: "";
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-image: radial-gradient(blue 0%, black 100%);
+            align-self: center;
+        }
+        #five1,#five2{
+            justify-content: flex-end;
+/*             border: 1px solid black;
+            box-sizing: border-box; */
+        }
+        #five4,#five5{
+            justify-content: flex-start;
+/*             border: 1px solid black;
+            box-sizing: border-box; */
+        }
+        #five3{
+            height: 100px;
+        }
+        #six{
+            flex-wrap: wrap;
+        }
+        #six1,#six2,#six3{
+            width: 100px;
+            height: 33px;
+/*             border: 1px solid black;
+            box-sizing: border-box; */
+            justify-content: space-around;
+        }
+        #six1::before,#six2::before,#six3::before{
+            content: "";
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-image: radial-gradient(blue 0%, black 100%);
+            align-self: center;
+        }
+        #six1::after,#six2::after,#six3::after{
+            content: "";
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-image: radial-gradient(blue 0%, black 100%);
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div id="one"></div>
+        <div id="two">
+            <div id="two1"></div>
+            <div id="two2"></div>
+        </div>
+        <div id="three">
+            <div id="three1" ><div id="three11"></div></div>
+            <div id="three2" ><div id="three12"></div></div>
+            <div id="three3" ><div id="three13"></div></div>
+        </div>
+        <div id="four">
+            <div id="four1" ></div>
+            <div id="four2" ></div>
+            <div id="four3" ></div>
+            <div id="four4" ></div>
+        </div>
+        <div id="five">
+            <div id="five1" ></div>
+            <div id="five2" ></div>
+            <div id="five3" ></div>
+            <div id="five4" ></div>
+            <div id="five5" ></div>
+        </div>
+        <div id="six">
+            <div id="six1" ></div>
+            <div id="six2" ></div>
+            <div id="six3" ></div>
+        </div>
+    </div>
+</body>
+
+</html>

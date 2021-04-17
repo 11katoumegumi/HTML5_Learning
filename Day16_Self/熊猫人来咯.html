@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #photo{
+                position: relative;
+                width: 380px;
+                height: 380px;
+                /* border: 1px solid black; */
+                background-color: #E7E7E7;
+                box-shadow: 1px 1px 10px slategray ;
+                /* padding-top: 10px; */
+                display: inline-block;
+                margin: 0 auto;
+                transform: scale(.7) rotate(30deg);
+                animation: rotate 2s linear 1;
+                animation-fill-mode: forwards;
+            }
+            #photo p{
+                margin: 12px 0;
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translate(-50%,0);
+            }
+            #photo img {
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                top: 45%;
+                transform: translate(-50%,-50%);
+            }
+            #photo #img1{
+                opacity: 1;
+            }
+            #photo #img2{
+                opacity: 1;
+                animation: gif 1ms linear 1;
+                animation-delay: 2s;
+                animation-fill-mode: forwards;
+            }
+
+
+            @keyframes rotate{
+                to{
+                    transform: scale(1) rotate(0deg);
+                }
+            
+            }
+            @keyframes gif {
+                from{
+                    opacity: 1;
+                }
+                to{
+                    opacity: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="photo">
+            <img src="../img/sasakisaku.gif" alt="" id="img1">
+            <img src="../img/sasakisaku_wps.jpg" alt="" id="img2">
+            <p>熊猫人来咯</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #outer {
+            width: 350px;
+            height: 225px;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #outer>div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            display: flex;
+            box-sizing: border-box;
+        }
+
+        .red {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-image: radial-gradient(red 0%, black 95%);
+            border: 1px solid black;
+        }
+
+        .blue {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-image: radial-gradient(blue 0%, black 95%);
+            border: 1px solid black;
+        }
+
+        /* 开始放球 */
+        #one {
+            justify-content: center;
+            align-items: center;
+        }
+
+        #two {
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #three {
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 0 5px;
+            box-sizing: border-box;
+        }
+
+        #three div:nth-of-type(2) {
+            align-self: center;
+        }
+
+        #three div:nth-of-type(3) {
+            align-self: flex-end;
+        }
+
+        #four,
+        #five,
+        #six {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        #four .column,
+        #five .column {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #six .column {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #five>div:nth-of-type(2) {
+            align-self: center;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div id="one">
+            <div class="red"></div>
+        </div>
+        <div id="two">
+            <div class="blue"></div>
+            <div class="blue"></div>
+        </div>
+        <div id="three">
+            <div class="blue"></div>
+            <div class="blue"></div>
+            <div class="blue"></div>
+        </div>
+        <div id="four">
+            <div class="column">
+                <div class="red"></div>
+                <div class="red"></div>
+            </div>
+            <div class="column">
+                <div class="red"></div>
+                <div class="red"></div>
+            </div>
+        </div>
+        <div id="five">
+            <div class="column">
+                <div class="blue"></div>
+                <div class="blue"></div>
+            </div>
+            <div class="blue"></div>
+            <div class="column">
+                <div class="blue"></div>
+                <div class="blue"></div>
+            </div>
+        </div>
+        <div id="six">
+            <div class="column">
+                <div class="blue"></div>
+                <div class="blue"></div>
+            </div>
+            <div class="column">
+                <div class="blue"></div>
+                <div class="blue"></div>
+            </div>
+            <div class="column">
+                <div class="blue"></div>
+                <div class="blue"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

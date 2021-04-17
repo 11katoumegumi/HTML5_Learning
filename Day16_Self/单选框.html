@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+ 
+        label{
+            display: inline-block;
+            color: white;
+            font-size: 16px;
+            margin: 10px 0;
+            margin-left: 46%;
+            width: 200px;
+            background-color: rgba(100, 255, 255,.5);
+            margin-top: 5px;
+            border-radius: 5px;
+            height: 50px;
+            line-height: 50px;
+            font-weight: bold;
+        }
+        label::before{
+            text-align: center;
+            content: "x";
+            display: inline-block;
+            width: 50px;
+        }
+        ul li input {
+            display: none;
+        }
+        ul li input:checked ~label::before{
+            content: "√";
+        }
+        ul li input:checked ~label{
+            color: tomato;
+            background-color: rgba(100, 255, 255,1);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><input type="radio" name="Gem" value="ruby" id="ruby">
+            <label for="ruby">Ruby</label>
+        </li>
+        <li><input type="radio" name="Gem" value="emerald" id="emerald">
+            <label for="emerald">Emerald</label>
+        </li>
+        <li><input type="radio" name="Gem" value="diamond" id="diamond">
+            <label for="diamond">Diamond</label>
+        </li>
+        <li><input type="radio" name="Gem" value="ultima" id="ultima">
+            <label for="ultima">ULTIMA</label>
+        </li>
+    </ul>
+
+</body>
+
+</html>
